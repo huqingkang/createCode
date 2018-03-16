@@ -1,26 +1,56 @@
 package bigdata.uitools.dto;
 
-import java.util.Date;
 
+/**
+ * UitoolsDTO.class 类
+ * Created by buck on 2018/03/16.
+ * @author buck wang
+ */
 public class UitoolsDTO {
-    //id
+    /**
+     * id
+     */
     private Integer id;
-    //标题
+    /**
+     * 标题
+     */
     private String titile;
-    //数据库
-    private String data_base;
-    //文件路径
-    private String file_url;
-    //模板路径
-    private String template_url;
-    //表名
-    private String table_name;
-    //创建时间
-    private Date createtime;
-    //PID
+    /**
+     * 数据库
+     */
+    private String dbName;
+    /**
+     * 文件路径
+     */
+    private String filePath;
+    /**
+     * 模板路径
+     */
+    private String modePath;
+    /**
+     *  表名
+     */
+     private String tableName;
+     /**
+      *创建时间
+      */
+    private String createtime;
+    /**
+     * PID
+     */
     private String pid;
-    //数据库类型
-    private String data_type;
+    /**
+     * 数据库类型
+     */
+    private String dbType;
+    /**
+     * 开始时间
+     */
+    private String startDate;
+    /**
+     * 结束时间
+     */
+    private String endDate;
 
     public Integer getId() {
         return id;
@@ -38,43 +68,43 @@ public class UitoolsDTO {
         this.titile = titile;
     }
 
-    public String getData_base() {
-        return data_base;
+    public String getDbName() {
+        return dbName;
     }
 
-    public void setData_base(String data_base) {
-        this.data_base = data_base;
+    public void setDbName(String dbName) {
+        this.dbName = dbName;
     }
 
-    public String getFile_url() {
-        return file_url;
+    public String getFilePath() {
+        return filePath;
     }
 
-    public void setFile_url(String file_url) {
-        this.file_url = file_url;
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
     }
 
-    public String getTemplate_url() {
-        return template_url;
+    public String getModePath() {
+        return modePath;
     }
 
-    public void setTemplate_url(String template_url) {
-        this.template_url = template_url;
+    public void setModePath(String modePath) {
+        this.modePath = modePath;
     }
 
-    public String getTable_name() {
-        return table_name;
+    public String getTableName() {
+        return tableName;
     }
 
-    public void setTable_name(String table_name) {
-        this.table_name = table_name;
+    public void setTableName(String tableName) {
+        this.tableName = tableName;
     }
 
-    public Date getCreatetime() {
+    public String getCreatetime() {
         return createtime;
     }
 
-    public void setCreatetime(Date createtime) {
+    public void setCreatetime(String createtime) {
         this.createtime = createtime;
     }
 
@@ -86,11 +116,32 @@ public class UitoolsDTO {
         this.pid = pid;
     }
 
-    public String getData_type() {
-        return data_type;
+    public String getDbType() {
+        return dbType;
     }
 
-    public void setData_type(String data_type) {
-        this.data_type = data_type;
+    public void setDbType(String dbType) {
+        this.dbType = dbType;
+    }
+
+    public String getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(String startDate) {
+        this.startDate = startDate;
+    }
+
+    public String getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(String endDate) {
+        this.endDate = endDate;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

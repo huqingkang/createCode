@@ -2,10 +2,10 @@ package bigdata.uitools;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import org.springframework.transaction.annotation.EnableTransactionManagement;
-
-
+/**
+ * Created by buck on 2018/03/16.
+ * @author buck wang
+ */
 @SpringBootApplication
 public class UitoolsApplication {
 
